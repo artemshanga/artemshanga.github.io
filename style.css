@@ -1,13 +1,15 @@
+/* Зміна стандартних margin, padding, and box-sizing */
 *{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 }
-
 main{
     display: flex;
     flex-direction: row;
 }
+
+/* Ліва Частина */
 #sideBlock{
     min-height: 100vh;
     width: 25vw;
@@ -16,12 +18,16 @@ main{
     flex-direction: column;
     align-items: center;
 }
+/* Фото в лівій частині */
+
 #photo{
     width: 30vh;
     height: 30vh;
     border-radius: 10000px;
     margin-top: 1.5vh;
 }
+/* Стиль параграфів та заголовків */
+
 .sideHeaders{
     font-size: 36px;
     font-weight: bold;
@@ -37,13 +43,15 @@ main{
     margin-bottom: 2vh;
     text-align: center;
 }
+/* Стиль для Article */
+
 .sideArticle{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2vh;
 }
-/* main block */
+/* Головна(Права) частина */
 
 #name{
     font-family: inter, sans-serif;
@@ -105,6 +113,7 @@ main{
     font-family: Inter, sans-serif;
 }
 
+/* Адаптивний дизайн для телефонів*/
 @media only screen and (orientation: portrait) and (max-width: 640px) {
     *{
         margin: 0;
@@ -164,12 +173,16 @@ main{
         margin-top: 2vh;
     }
 }
+
+/* Для великих розмірів */
 @media only screen and (orientation: portrait) and (max-width: 1024px) {
     #photo{
         width: 20vw;
         height: 20vw;
     }
 }
+
+/* Для іншої орієнтації */
 @media only screen and (orientation: landscape) and (max-height: 640px) {
     #photo{
         width: 15vw;
